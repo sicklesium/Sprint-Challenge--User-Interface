@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,10 +66,37 @@ p {
     line-height: 1.4;
 }
 
+/* MAIN BODY */
+
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+/* NAVIGATION */
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.real_nav a {
+	text-decoration: none;
+	color: black;
+	padding-left: 41px;
+	padding-right: 41px;
+	font-size: 14px;
+}
+
+#jumbo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* TOP CONTENT */
 
 .top-content {
     display: flex;
@@ -82,8 +109,10 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
+
+/* MIDDLE CONTENT */
 
 .middle-content {
     margin-bottom: 20px;
@@ -112,6 +141,8 @@ p {
     justify-content: center;
 }
 
+/* BOTTOMC ONTENT */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +156,8 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* FOOTER */
 
 footer {
     width: 100%;
